@@ -1,1 +1,13 @@
 https://drive.google.com/file/d/1dyEVI-6wimN39XIVm7SEJVvKiz2Mim8R/view?usp=sharing
+csb100300008d3f330c
+
+
+Storage account name 
+
+
+
+az storage container create -n tfstate --account-name csb100300008d3f330c --account-key kXt/B6sibjaTVADfzlIgUfOrphD33hMW0QyIB6h0c6vRBkptnNb284k4b5t570ruL1rnAh6UeR2ibqusHv+D5A==
+
+
+
+terraform init -backend-config="storage_account_name=csb100300008d3f330c" -backend-config="container_name=tfstate" -backend-config="access_key=kXt/B6sibjaTVADfzlIgUfOrphD33hMW0QyIB6h0c6vRBkptnNb284k4b5t570ruL1rnAh6UeR2ibqusHv+D5A==" -backend-config="key=codelab.microsoft.tfstate"
